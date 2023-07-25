@@ -95,6 +95,11 @@ int main()
         // render the triangle
         ourShader.use();
         glBindVertexArray(VAO);
+
+        double  timeValue = glfwGetTime();
+        float factor = fmod(timeValue, 3.0);
+        ourShader.setFloat("factor", factor);
+
         glDrawArrays(GL_TRIANGLES, 0, 3);
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)

@@ -15,6 +15,7 @@ FIND_LIBRARY( ASSIMP_LIBRARY assimp
 	/usr/lib
 	/usr/local/lib
 	/opt/local/lib
+	/opt/homebrew/opt/assimp/lib
 	${CMAKE_SOURCE_DIR}/lib
 )
 IF(ASSIMP_INCLUDE_DIR AND ASSIMP_LIBRARY)
